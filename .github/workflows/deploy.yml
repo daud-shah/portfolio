@@ -35,7 +35,7 @@ jobs:
         run: npm install
 
       - name: Build portfolio
-        run: npm run build
+        run: node ./node_modules/vite/bin/vite.js build
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
